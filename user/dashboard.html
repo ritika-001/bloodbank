@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.20/c3.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11-rc4/c3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<link rel="stylesheet" type="text/css" href="dashboard.css">
+	<title>Dashboard</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-lg-3 infodiv">
+			<div class="innerinfodiv d-flex align-items-center">
+				<p class="font-mont"></p>
+			   <p class="font-mont">Users</p>
+		    </div>
+		</div>
+		<div class="col-md-6 col-lg-3 infodiv">
+			<div class="innerinfodiv d-flex align-items-center">
+			  <p class="font-mont"></p>
+			  <p class="font-mont">Blood groups</p>
+		    </div>
+		</div>
+		<div class="col-md-6 col-lg-3 infodiv">
+			<div class="innerinfodiv d-flex align-items-center">
+			  <p class="font-mont"></p>
+			  <p class="font-mont">donors</p>
+		    </div>
+		</div>
+		<div class="col-md-6 col-lg-3 infodiv">
+			<div class="innerinfodiv d-flex align-items-center">
+			  <p class="font-mont"></p>
+			  <p class="font-mont">blood receivers</p>
+		    </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-5">
+			<div class="chartdiv" id="chart">
+				chart
+			</div>
+		</div>
+		<div class="col-lg-7">
+			<div class="chartdiv" id="chartContainer">
+				piechart
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="lastmodifiedvalue">
+				Last Modified Value
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<!-- chart 1 start -->
+<script type="text/javascript">
+	var chart = c3.generate({
+	bindto: "#chart",
+    data: {
+        // iris data from R
+        columns: [
+            ['Users', 30],
+            ['Doners', 30],
+            ['Receivers', 30]
+        ],
+        type : 'pie',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+    }
+});
+</script>
+<!-- chart 1 end-->
+<!-- chart 2 start -->
+<script>
+window.onload = function () {
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+		text: "Donor data"
+	},
+	data: [{
+		type: "line",
+		dataPoints: dps
+	}]
+});
+
+var xVal = 0;
+var yVal = 100; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function (count) {
+
+	count = count || 1;
+
+	//for (var j = 0; j < count; j++) {
+	//	yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+		dps.push({
+			x: 100,
+			y: 9
+		});
+		dps.push({
+			x: 100,
+			y: 2
+		});
+	//	xVal++;
+	//}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+}
+</script>
+</html>

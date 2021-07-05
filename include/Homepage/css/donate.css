@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+	background-color:#f6f5f5;
+	overflow-x: hidden;
+}
+.donateheader
+{
+	margin-top: 1%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom:5%;
+}
+.donatelogo p
+{
+	font-size:2rem;
+	font-weight: 600
+}
+.menu .ulclass
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+.menu .ulclass li
+{
+	margin:0px 25px;
+	font-family:  'Nunito Sans', sans-serif;
+}
+
+.text-muted{
+	color:#777;
+}
+.font-mont{
+	font-family: 'Montserrat',sans-serif;
+}
+.font-nunito{
+	font-family:  'Nunito Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+}
+.button {
+  background-color:#fb8692; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+      width: fit-content;
+    border-radius: 25px;
+  font-size: 16px;
+  padding: 14px 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.donateul
+{
+	padding:0px 20px;
+}
+.donateul li
+{
+	padding-top:5px;
+}
+.donatestarttext
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.donatetext
+{
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	flex-direction: column;
+	padding-left:40px;
+}
+.donatetext1
+{
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	flex-direction: column;
+	padding-right:40px;
+}
+.line
+{
+	width:20%;
+	height:4px;
+	display: block;
+	border:1px solid pink;
+	background-color: pink;
+}
+/*/*donatecounter starts*/
+.donatequestionpage,.donatecounter,.timeline,.gallery,.footer
+
+{
+    margin-top:8%;
+}
+.donatedetails
+{
+    /*display: inline-block;*/
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /*border:1px solid gray;*/
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.donatedetails i,span
+{
+	font-size:35px;
+	color:#ff879c;
+}
+.innerdonate
+{
+    display: flex;
+	justify-content: center;
+	align-items: center;	
+	flex-direction: column;
+}
+/*counter ends*/
+/*gallery start*/
+.gallerytext
+{
+	background-color: pink;
+	color:white;
+	display: none;
+}
+/*gallery ends*/
+/*footer start*/
+.footer
+{
+	background-color:#ff879c;
+	padding:40px;
+	color:white;
+}
+
+.icons
+{
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;		
+}
+.icons i
+{
+	margin:0px 20px;
+}
+.outerfooter
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+.innerfooter
+{
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+justify-content:center; 	
+flex-direction: column;	
+}
+.footerproducts
+{
+	padding-left:35px;
+}
+@media screen and (max-width:991px)
+{
+   .footerproducts
+   {
+   	  padding:0;
+   }
+}
+@media screen and (max-width:576px)
+{
+   .icons
+   {
+   	  display: block;
+   }
+}
+/*footer ends*/
+/*gallery ends*/

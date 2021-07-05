@@ -1,0 +1,102 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+.ContactPage,.contactsecondpage
+{
+  margin-bottom:3%;
+}
+.ContactPage,.contactsecondpage
+{
+	width:100%;
+	height:40vh;
+	background-color:#ff879c;
+	border-bottom-right-radius: 110px;
+	
+}
+.ContactFirstpage
+{
+	display: flex;
+	justify-content: space-around;
+}
+.logo1 
+{
+	margin:14px;
+}
+.contactmenu .ulclass
+{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.contactcontent
+{
+	margin-top:20px;
+	text-align:center;
+}
+.contactcontent p
+{
+	margin-top: 10px;
+	color:white;
+}
+.contactcontent h2
+{
+	color:white;
+	margin-top: 10px;
+}
+.ulclass li
+{
+	margin:20px;
+}
+.contactsvg
+{
+	width:100%;
+}
+.contactform
+{
+	display: flex;
+	justify-content: center;
+}
+.contactform .inputform
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left:30px;
+}
+.contactform .input
+{
+	width:100%;
+	border-radius: 7px;
+    padding:15px 10px;
+    margin-bottom: 25px;
+    background: #eeeeee;
+    border:none;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.extrapart
+{
+	width:60%;
+	height:30vh;
+	border-bottom-right-radius: 110px;
+	position: absolute;
+	transform: translate(106px,0px);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	flex-direction: column;
+}

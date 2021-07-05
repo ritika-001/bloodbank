@@ -1,0 +1,35 @@
+.button {
+  background-color: #ff879c; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 14px 40px;
+  cursor: pointer;
+}
+	input
+	{
+		padding:20px 1rem;
+		width:90%;
+		border-radius: 7px;
+		border:none;
+		background-color:#f6f5f5;
+	}
+	textarea
+	{
+		width: 95%;
+		border-radius: 7px;
+		padding:5px 1rem;
+		background-color:#f6f5f5;
+	}
+	.abcd
+	{
+	    padding:20px 1rem;
+		width:90%;
+		border-radius: 7px;
+		border:none;
+		background-color:#f6f5f5;	
+	}

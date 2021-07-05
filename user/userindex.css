@@ -1,0 +1,77 @@
+.header
+	{
+		background:#47484a;
+		padding:10px 0px;
+	}
+	.headerh3
+	{
+		color: white;
+	}
+.menuicon {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+.innericon
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:35px;
+	height:35px;
+	border-radius: 50%;
+	text-align:center;
+	border:1px solid black;
+	background-color:white;
+	margin:0px 10px; 
+	color:black;
+}
+.showsection
+{
+	background-color:lightgray;
+}
+.image
+{
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+	background-image: url(office.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#points
+{
+	cursor: pointer;
+}
+.Menulist
+{
+	width:300px;
+	height:90vh;
+	background-color: #2f323A;
+	color:white;
+	padding:20px 0px;
+}
+.Menulist .ulclass
+{
+	list-style-type: none;
+	padding-left: 15px;
+	margin-top: 20px;
+}
+.ulclass li
+{
+	padding:20px 0px;
+}
+.ulclass .icon
+{
+	padding-right: 15px;
+}
+.icon i
+{
+	font-size: 20px;
+}
+.text
+{
+	font-size:17px;
+}

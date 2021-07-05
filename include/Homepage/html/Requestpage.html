@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	
+	<title>RequestBlood</title>
+</head>
+<style>
+	input
+	{
+		padding:20px 1rem;
+		width:100%;
+		border-radius: 7px;
+		border:none;
+		background-color:#f6f5f5;
+	}
+	.abcd
+	{
+	    padding:20px 1rem;
+		width:100%;
+		border-radius: 7px;
+		border:none;
+		background-color:#f6f5f5;	
+	}
+
+.button {
+  background-color: #ff879c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width:200px;
+  border-radius: 7px;
+}
+</style>
+
+<body>
+<header>
+	<div class="logo">
+		<p class="font-mont">Donation</p>
+	</div>
+	<div class="menu">
+		<ul class="ulclass">
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Donate</li>
+			<li>Blog</li>
+			<li>Contact Us</li>
+		</ul>
+	</div>
+</header>
+<section class="addrequestpage">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="font-mont">Request For Blood</h3>
+			</div>
+		</div>	<br/>
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<p>Firstname</p>
+				<input type="text" placeholder="FirstName">
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<p>Lastname</p>
+				<input type="text" placeholder="LastName">
+            </div>
+         </div><br/>
+         <div class="row">
+         	<div class="col-md-6 col-lg-6">
+         		<p>BirthDate</p>
+         		<input type="date" placeholder="Date">
+         	</div>
+            <div class="col-md-6 col-lg-6">
+            	<p>Gender</p>
+				<select class="abcd">
+				  <option selected>Gender</option>
+				  <option value="1">Male</option>
+				  <option value="2">Female</option>
+				</select>
+            </div>
+		</div>
+		<br/>
+        <div class="row">
+			<div class="col-md-4 col-lg-4">
+				<p>Country</p>
+				<select class="abcd">
+				  <option selected>Country</option>
+				  <option value="1">India</option>
+				  <option value="2">Australia</option>
+				</select>
+			</div>
+			<div class="col-md-4 col-lg-4">
+				<p>State</p>
+				<select class="abcd">
+				  <option selected>State</option>
+				  <option value="1">Male</option>
+				  <option value="2">Female</option>
+				</select>
+            </div>
+            <div class="col-md-4 col-lg-4">
+            	<p>City</p>
+				<select class="abcd">
+				  <option selected>City</option>
+				  <option value="1">Male</option>
+				  <option value="2">Female</option>
+				</select>
+            </div>
+		</div><br/>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>Address</p>
+				<textarea class="textarea" placeholder="address" rows="2" style="width:100%;border-radius: 7px;padding:6px;background-color: #f6f5f5;border:none;"></textarea>
+			</div>
+			<div class="col-lg-6">
+				<p>Blood Group</p>
+				<select class="abcd">
+				  <option selected>Blood Group</option>
+				  <option value="1">A+</option>
+				  <option value="2">A-</option>
+				  <option value="3">B+</option>
+				  <option value="4">B-</option>
+				  <option value="5">AB+</option>
+				  <option value="6">AB-</option>
+				  <option value="7">O+</option>
+				  <option value="8">O-</option>
+				</select>
+			</div>
+		</div><br/><br/>
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="font-mont">Contact Details</h3>
+			</div>
+		</div><br/>
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<p>Email</p>
+				<input type="text" placeholder="Email">
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<p>PhoneNumber</p>
+				<input type="text" placeholder="Phonenumber">
+            </div>
+         </div><br/>
+         <div class="row">
+         	<div class="col-md-6 col-lg-6">
+         		<p>StartDate</p>
+         		<input type="date" placeholder="Date">
+         	</div>
+            <div class="col-md-6 col-lg-6">
+            	<p>EndDate</p>
+         		<input type="date" placeholder="Date">
+		    </div>
+		</div><br/>
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<p>HospitalName</p>
+				<input type="text" placeholder="HospitalName">
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<p>Any Message</p>
+				<input type="text" placeholder="Any Message...">
+            </div>
+         </div><br/>
+	<button class="button">Submit</button>
+
+	</div>
+</section>
+<footer class="footer">	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<p class="font-mont">Get connected with us on social media</p>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="icons">
+				<i class="fa fa-facebook-square" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-google" aria-hidden="true"></i>
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			   </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-3 outerfooter">
+				<div class="innerfooter">
+					<h4 class="font-mont">COMPANY</h4>
+					<p class="font-nunito">Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.your footer content elit.your footer content.</p>
+			    </div>
+			</div>
+			<div class="col-md-6 col-lg-3 outerfooter">
+				<div class="innerfooter footerproducts">
+					<h4 class="font-mont">PRODUCTS</h4>
+					<p class="font-nunito">donation</p>
+					<p class="font-nunito">request</p>
+              		<p class="font-nunito">UserInfo</p>
+					<p class="font-nunito">seeing</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 outerfooter">
+				<div class="innerfooter">
+					<h4 class="font-mont">USEFUL LINKS</h4>
+					<p class="font-nunito">Your Account</p>
+                    <p class="font-nunito">Become an Affiliate</p>
+					<p class="font-nunito">Shipping Rates</p>
+					<p class="font-nunito">Help</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 outerfooter">
+				<div class="innerfooter">
+					<div class="innerfooter">
+					<h4 class="font-mont">CONTACT</h4>
+					<p class="font-nunito"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Baroda-express,CTM,Ahmedabad</p>
+					<p class="font-nunito"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;ritikamakk@gmail.com</p>
+					<p class="font-nunito"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+123456789</p>
+					<p class="font-nunito"><i class="fa fa-print" aria-hidden="true"></i>&nbsp;+123456789</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+	
+        
+	function submitd(){
+		var form=document.forms[0];
+	    var data={
+				pname:form.pname.value,
+				dname:form.dname.value,
+				bloodgroup:form.bloodgroup.value,
+				states:form.states.value,
+				districts:form.districts.value,
+				disease:form.disease.value,
+				hospital:form.hospital.value,
+				cname:form.cname.value,
+				cnumber:form.cnumber.value,
+				date:form.date.value,
+				priority:form.priority.value,
+				email:form.email.value,
+                message:form.message.value,
+			}
+			console.log(data);
+			/*$.ajax({
+				url:'include/authentication/Requestblood.php',
+				method:'post',
+				data:data,
+				success:function(a,b){
+					alert(a);
+					if(a=='done')
+						form.reset();
+				}
+			});*/
+		}
+	
+</script>
+</body>
+
+</html>

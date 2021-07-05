@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,600;1,700;1,800;1,900&display=swap');
+.text-muted{
+	color:#777;
+}
+.font-mont{
+	font-family: 'Montserrat',sans-serif;
+}
+.font-nunito{
+	font-family:  'Nunito Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+	body
+	{
+		margin:0;
+		padding:0;
+	}
+	.Login
+	{
+		display: flex;
+
+	}
+	.login1
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width:30%;
+		height:100vh;
+		text-align: center;
+		font-size:1.5rem;
+	}
+	.login2
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width:70%;
+		height:100vh;
+	}
+	@media screen and (max-width:991px)
+	{
+		.Login
+		{
+			display: block;
+		}
+		.login1
+		{
+			width:100%;
+		}
+		.login1 .bloodlogo
+		{
+			width:100%;
+		}
+		.login2
+		{
+			width:100%;
+		}
+	}
+
+	.input input
+	{
+		padding:20px 1rem;
+		width:100%;
+		border-radius: 7px;
+		border:none;
+	}
+		@media screen and (max-width:600px)
+	{
+        .input input
+        {
+        	width:90%;
+        }
+	}
+	.button {
+		  margin-top:5%;
+		  width: fit-content;
+		  border: none;
+		  color: white;
+		  padding: 14px 28px;
+		  font-size: 16px;
+		  cursor: pointer;
+}
+.info {background-color:#f32165;} /* Blue */
+.info:hover {background:#f32165;}
+.text
+{
+	display: flex;
+	font-size:20px;
+}
+
+h4
+{
+	margin:10px 0px;
+}
+.inputtext1
+{
+	float:left;
+}
+.inputtext2
+{
+	float:right;
+}
